@@ -1,0 +1,86 @@
+//VARIABLES
+$textcolor: #414141;
+$strongcolor: #212121;
+$heavyweight: 700;
+$backgroundcolor: #fafafa;
+$blockcolor: #eaeaea;
+$linkcolor: #2177d4;
+$linkhover: #d43921;
+$altfont: "Courier New", "Courier", monospace;
+
+body{
+  font-size: 18px;
+  background-color: $backgroundcolor;
+  max-width: 40em;
+  margin: 0 auto;
+  color: $textcolor;
+  font-family: "Arial", "Helvetica", sans-serif;
+  line-height: 1.5;/*MDN recommends unitless heights*/
+
+  margin-bottom: 15px;
+}
+
+h1,h2,h3,h4,h5,h6{
+  font-weight: $heavyweight;
+  color: $strongcolor;
+}
+h1{
+  font-size: 2.5rem;
+}
+h2{
+  font-size: 2.25rem;
+}
+h3{
+  font-size: 2rem;
+}
+h4{
+  font-size: 1.75rem;
+}
+h5{
+  font-size: 1.5rem;
+}
+h6{
+  font-size: 1.25rem;
+}
+
+a{
+  text-decoration: none;
+  color: $linkcolor;
+
+  &:hover{
+    color: $linkhover;
+  }
+}
+q{
+  background-color: $blockcolor;
+}
+pre,
+blockquote{
+  border-left: 3px solid $textcolor;
+  background-color: $blockcolor;
+}
+blockquote{
+  margin: 5px;
+  padding-left: 15px;
+}
+
+pre{
+  background-color: $blockcolor;
+}
+code{
+  font-family: $altfont;
+}
+hr{
+  border-color: $textcolor;
+}
+img{
+  max-width: 100%;
+}
+figure{
+  padding: 15px;
+  margin: 0px;
+  background-color: $blockcolor;
+}
+figcaption{
+  margin: 5px 0;
+}
