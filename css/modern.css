@@ -9,7 +9,12 @@ body {
   /*MDN recommends unitless heights*/
   margin-bottom: 15px; }
 
-h1, h2, h3, h4, h5, h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   font-weight: 700;
   color: #212121; }
 
@@ -40,8 +45,8 @@ a {
 q {
   background-color: #eaeaea; }
 
-pre,
-blockquote {
+blockquote,
+pre {
   border-left: 3px solid #414141;
   background-color: #eaeaea; }
 
@@ -63,10 +68,19 @@ img {
 
 figure {
   padding: 15px;
-  margin: 0px;
+  margin: 0;
   background-color: #eaeaea; }
 
 figcaption {
   margin: 5px 0; }
 
-/*# sourceMappingURL=custom.css.map */
+button {
+  border: 1px solid black;
+  border-radius: 3px;
+  padding: 5px;
+  margin: 0;
+  background-color: #fff; }
+  button :disabled {
+    border-color: #aaa; }
+
+/*# sourceMappingURL=modern.css.map */
