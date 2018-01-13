@@ -2,6 +2,7 @@ body {
   font-size: 18px;
   background-color: #fafafa;
   max-width: 40em;
+  max-width: 1140px;
   margin: 0 auto;
   color: #414141;
   font-family: "Arial", "Helvetica", sans-serif;
@@ -9,6 +10,7 @@ body {
   /*MDN recommends unitless heights*/
   margin-bottom: 15px; }
 
+/* TEXT */
 h1,
 h2,
 h3,
@@ -78,9 +80,34 @@ button {
   border: 1px solid black;
   border-radius: 3px;
   padding: 5px;
-  margin: 0;
+  margin: 5px 0;
   background-color: #fff; }
-  button :disabled {
+  button:disabled {
     border-color: #aaa; }
+
+label {
+  margin: 5px 0;
+  display: inline-block; }
+
+input, textarea, select {
+  display: block;
+  width: 100%;
+  font-size: 1rem;
+  padding: 7px;
+  border: 1px solid #c3c3c3;
+  border-radius: 3px; }
+  input:focus, textarea:focus, select:focus {
+    box-shadow: 0 0 9px #2177d4;
+    transition: box-shadow .1s;
+    outline: 0; }
+  input:disabled, textarea:disabled, select:disabled {
+    background-color: #eaeaea; }
+  input[type="button"], textarea[type="button"], select[type="button"] {
+    border: 1px solid black;
+    border-radius: 3px;
+    padding: 5px;
+    margin: 5px 0;
+    background-color: #fff;
+    width: auto; }
 
 /*# sourceMappingURL=modern.css.map */

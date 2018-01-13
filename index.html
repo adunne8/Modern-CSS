@@ -6,7 +6,14 @@
 
 </head>
 <body>
-  <h1>Heading 1</h1>
+  <h1>Modern CSS library</h1>
+  <a href="#text"><button>Text</button></a>
+  <a href="#blocks"><button>Blocks</button></a>
+  <a href="#links"><button>Links</button></a>
+  <a href="#images"><button>Images</button></a>
+  <a href="#input"><button>Input</button></a>
+
+  <h2 id="text">Text</h2>
 
   <p>This is some standard text with <strong>Bold/Strong</strong> and <em>Emphasised</em> text</p>
   <p>Multiple paragraphs have spacing</p>
@@ -25,13 +32,17 @@
     <li>Ul item 1</li>
     <li>Ul item 1</li>
   </ul>
+
   <p>Numbered list</p>
   <ol>
     <li>Item 1</li>
     <li>Item 2</li>
     <li>Item 3</li>
   </ol>
-  <h2>Blocks</h2>
+
+  <hr>
+
+  <h2 id="blocks">Blocks</h2>
   <h3>Blockquote</h3>
   <blockquote>
     <p>Some text quoted from that dude who said the stuff about the things that person did back it the time the event happened,</p>
@@ -48,17 +59,66 @@
   &lt/div&gt
   &ltspan&gtAnd many others&lt/span&gt</code>
   </pre>
-  <h2>Some links</h2>
+
+  <hr>
+
+  <h2 id="links">Some links</h2>
   <p>Embeded links including a link to <a href="https:\\google.com">Google</a> homepage</p>
   <h2>A horizontal line</h2>
   <hr>
-  <h2>Images</h2>
+
+
+  <h2 id="images">Images</h2>
   <h3>Images are responsive by default</h3>
   <img src="http://i65.tinypic.com/33dwmqe.jpg" border="0" alt="Image and video hosting by TinyPic">
   <h3>Figure and Figcaption are connected better</h3>
   <figure>
     <img src="http://i64.tinypic.com/e8rcc4.jpg" border="0" alt="Image and video hosting by TinyPic">
     <figcaption>This is a footnote for the image, the figcaption uses reduced padding rather than margin to stay in line with the page</figcaption>
-
   </figure>
+
+  <hr>
+
+  <h2 id="input">Input</h2>
+  <p>Input types use curved borders and altered color</p>
+
+  <label for="text_example">A simple textbox</label>
+  <input type="text" name="text_example">
+
+  <label for="textarea_example">A sample Textbox/Textarea</label>
+  <textarea name="textarea_example" rows="8" cols="80"></textarea>
+
+  <label for="select_example">Select dropdown menu</label>
+  <select name="select_example">
+    <option value="option1">Option 1</option>
+    <option value="option2">Option 2</option>
+    <option value="option1">Option 3</option>
+    <option value="option4">Option 4</option>
+    <option value="option5">Option 5</option>
+    <option value="option6">Option 6</option>
+  </select>
+
+  <label for="selectmultiple_example">Multiple select dropdown menu</label>
+  <select multiple name="selectmultiple_example">
+    <option value="option1">Option 1</option>
+    <option value="option2">Option 2</option>
+    <option value="option1">Option 3</option>
+    <option value="option4">Option 4</option>
+    <option value="option5">Option 5</option>
+    <option value="option6">Option 6</option>
+  </select>
+
+  <label for="password_example">Passwords</label>
+  <input type="password" name="password_example">
+
+  <label for="readonly_example">Disabled input</label>
+  <input disabled read-only type="text" value="email@address.com">
+
+  <p>Buttons</p>
+  <button>Button</button>
+  <input type="button" value="Input Button">
+
+
+
+
 </body>
