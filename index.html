@@ -1,12 +1,21 @@
 <!DOCTYPE html>
 <html>
+
 <head>
 
   <link rel="stylesheet" href="css/modern.css"></link>
 
 </head>
+
 <body>
-  <h1>Heading 1</h1>
+  <h1>Modern CSS library</h1>
+  <a href="#text"><button>Text</button></a>
+  <a href="#blocks"><button>Blocks</button></a>
+  <a href="#links"><button>Links</button></a>
+  <a href="#images"><button>Images</button></a>
+  <a href="#input"><button>Input</button></a>
+
+  <h2 id="text">Text</h2>
 
   <p>This is some standard text with <strong>Bold/Strong</strong> and <em>Emphasised</em> text</p>
   <p>Multiple paragraphs have spacing</p>
@@ -25,13 +34,17 @@
     <li>Ul item 1</li>
     <li>Ul item 1</li>
   </ul>
+
   <p>Numbered list</p>
   <ol>
     <li>Item 1</li>
     <li>Item 2</li>
     <li>Item 3</li>
   </ol>
-  <h2>Blocks</h2>
+
+  <hr>
+
+  <h2 id="blocks">Blocks</h2>
   <h3>Blockquote</h3>
   <blockquote>
     <p>Some text quoted from that dude who said the stuff about the things that person did back it the time the event happened,</p>
@@ -48,17 +61,110 @@
   &lt/div&gt
   &ltspan&gtAnd many others&lt/span&gt</code>
   </pre>
-  <h2>Some links</h2>
+
+  <hr>
+
+  <h2 id="links">Some links</h2>
   <p>Embeded links including a link to <a href="https:\\google.com">Google</a> homepage</p>
   <h2>A horizontal line</h2>
   <hr>
-  <h2>Images</h2>
+
+
+  <h2 id="images">Images</h2>
   <h3>Images are responsive by default</h3>
   <img src="http://i65.tinypic.com/33dwmqe.jpg" border="0" alt="Image and video hosting by TinyPic">
   <h3>Figure and Figcaption are connected better</h3>
   <figure>
     <img src="http://i64.tinypic.com/e8rcc4.jpg" border="0" alt="Image and video hosting by TinyPic">
     <figcaption>This is a footnote for the image, the figcaption uses reduced padding rather than margin to stay in line with the page</figcaption>
-
   </figure>
+
+  <hr>
+
+  <h2 id="input">Input</h2>
+  <p>Input types use curved borders and altered color</p>
+
+  <h3>Text</h3>
+
+  <label for="text_example">A simple textbox</label>
+  <input type="text" name="text_example" id="text_example">
+
+  <label for="textarea_example">A sample Textbox/Textarea</label>
+  <textarea name="textarea_example" id="textarea_example" rows="8" cols="80"></textarea>
+
+
+  <label for="password_example">Passwords</label>
+  <input type="password" id="password_example" name="password_example">
+
+  <label for="readonly_example">Disabled input</label>
+  <input disabled read-only type="text" id="readonly_example" value="email@address.com">
+
+  <label for="invalid_example">Invalid</label>
+  <input type="email" id="invalid_example" value="testemail@">
+
+  <label for="search_example" id="search_example">Search</label>
+  <input type="search" id="search_example" name="search_example">
+
+  <label for="number_example">Number</label>
+  <input type="number" id="number_example" name="number_example">
+
+
+  <h3>Buttons</h3>
+  <button>Button</button>
+  <input type="button" value="Input Button">
+  <input type="reset" value="Reset Button">
+  <input type="file" id="file_example" value="File Button">
+  <label for="file_example">Upload File</label>
+
+  <h3>Selections</h3>
+  <form>
+    <p>Checkboxes for multiple selections</p>
+    <div>
+      <input type="checkbox" name="checkbox1" id="checkbox_example1">
+      <label for="checkbox_example1">Checkbox 1</label>
+    </div>
+
+    <div>
+      <input type="checkbox" name="checkbox1" id="checkbox_example2">
+      <label for="checkbox_example2">Checkbox 2</label>
+    </div>
+  </form>
+
+  <form>
+    <p>Radio Buttons for single selection</p>
+    <div>
+      <input type="radio" id="radoi1" name="contact" value="radio1">
+      <label for="radoi1">Radio 1</label>
+    </div>
+    <div>
+      <input type="radio" id="radio2" name="contact" value="radio2">
+      <label for="radio2">Radio 2</label>
+    </div>
+    <div>
+      <input type="radio" id="radio3" name="contact" value="radio3">
+      <label for="radio3">Radio 3</label>
+    </div>
+  </form>
+
+  <label for="select_example">Select dropdown menu</label>
+  <select name="select_example">
+    <option value="option1">Option 1</option>
+    <option value="option2">Option 2</option>
+    <option value="option1">Option 3</option>
+    <option value="option4">Option 4</option>
+    <option value="option5">Option 5</option>
+    <option value="option6">Option 6</option>
+  </select>
+
+  <label for="selectmultiple_example">Multiple select dropdown menu</label>
+  <select multiple name="selectmultiple_example">
+    <option value="option1">Option 1</option>
+    <option value="option2">Option 2</option>
+    <option value="option1">Option 3</option>
+    <option value="option4">Option 4</option>
+    <option value="option5">Option 5</option>
+    <option value="option6">Option 6</option>
+  </select>
+
+
 </body>
