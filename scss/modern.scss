@@ -1,13 +1,13 @@
 //VARIABLES
-$textcolor:       #414141;
-$strongcolor:     #212121;
-$heavyweight:     700;
+$textcolor: #414141;
+$strongcolor: #212121;
+$heavyweight: 700;
 $backgroundcolor: #fafafa;
-$blockcolor:      #eaeaea;
-$linkcolor:       #2177d4;
-$linkhover:       #d43921;
-$altfont:         "Courier New", "Courier", monospace;
-$bordercolor:     #c3c3c3;
+$blockcolor: #eaeaea;
+$linkcolor: #2177d4;
+$linkhover: #d43921;
+$altfont: "Courier New", "Courier", monospace;
+$bordercolor: #c3c3c3;
 
 body {
   font-size: 18px;
@@ -74,9 +74,6 @@ blockquote,
 pre {
   border-left: 3px solid $textcolor;
   background-color: $blockcolor;
-}
-
-blockquote {
   margin: 5px;
   padding-left: 15px;
 }
@@ -98,7 +95,7 @@ img {
 }
 
 figure {
-  padding: 15px;
+  padding: 5px;
   margin: 0;
   background-color: $blockcolor;
 }
@@ -106,23 +103,42 @@ figure {
 figcaption {
   margin: 5px 0;
 }
-
+/* INPUT */
+/*
 button {
   border: 1px solid black;
   border-radius: 3px;
   padding: 5px;
+  font-size: 1.2rem;
   margin: 5px 0;
   background-color: #fff;
+  width: auto;
+  cursor: pointer;
 
   &:disabled {
     border-color: #aaa;
   }
+
+  &:hover {
+    background-color: #f0f0f0;
+  }
 }
-label{
+*/
+label {
   margin: 5px 0;
   display: inline-block;
 }
-input, textarea, select{
+
+input[type="email"],
+input[type="number"],
+input[type="password"],
+input[type="tel"] textarea,
+input[type="text"],
+input[type="textbox"],
+input[type="url"],
+input[type="search"],
+textarea,
+select {
   display: block;
   width: 100%;
   font-size: 1rem;
@@ -130,21 +146,49 @@ input, textarea, select{
   border: 1px solid $bordercolor;
   border-radius: 3px;
 
-  &:focus{
+  &:focus {
     box-shadow: 0 0 9px $linkcolor;
-    transition: box-shadow .1s;
+    transition: box-shadow 0.1s;
     //border-color: $linkcolor;
     outline: 0;
   }
-  &:disabled{
+
+  &:disabled {
     background-color: $blockcolor;
   }
-  &[type="button"]{
-    border: 1px solid black;
-    border-radius: 3px;
-    padding: 5px;
-    margin: 5px 0;
-    background-color: #fff;
-    width: auto;
+
+  &:invalid {
+    border-color: $linkhover;
   }
+}
+
+input[type="button"],
+input[type="file"],
+input[type="reset"],
+button {
+  border: 1px solid $strongcolor;
+  border-radius: 3px;
+  padding: 5px;
+  font-size: 1.2rem;
+  margin: 5px 0;
+  background-color: #fff;
+  width: auto;
+  cursor: pointer;
+
+  &:hover {
+    background-color: #f0f0f0;
+  }
+  &:focus{
+    outline: 0;
+    box-shadow: 0 0 9px $linkcolor;
+    transition: box-shadow 0.1s;
+  }
+}
+input[type="file"]{
+  padding: 2px;
+
+}
+input[type="checkbox"] {
+  display: inline-block;
+  width: auto;
 }

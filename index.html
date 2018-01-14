@@ -1,10 +1,12 @@
 <!DOCTYPE html>
 <html>
+
 <head>
 
   <link rel="stylesheet" href="css/modern.css"></link>
 
 </head>
+
 <body>
   <h1>Modern CSS library</h1>
   <a href="#text"><button>Text</button></a>
@@ -82,11 +84,67 @@
   <h2 id="input">Input</h2>
   <p>Input types use curved borders and altered color</p>
 
+  <h3>Text</h3>
+
   <label for="text_example">A simple textbox</label>
-  <input type="text" name="text_example">
+  <input type="text" name="text_example" id="text_example">
 
   <label for="textarea_example">A sample Textbox/Textarea</label>
-  <textarea name="textarea_example" rows="8" cols="80"></textarea>
+  <textarea name="textarea_example" id="textarea_example" rows="8" cols="80"></textarea>
+
+
+  <label for="password_example">Passwords</label>
+  <input type="password" id="password_example" name="password_example">
+
+  <label for="readonly_example">Disabled input</label>
+  <input disabled read-only type="text" id="readonly_example" value="email@address.com">
+
+  <label for="invalid_example">Invalid</label>
+  <input type="email" id="invalid_example" value="testemail@">
+
+  <label for="search_example" id="search_example">Search</label>
+  <input type="search" id="search_example" name="search_example">
+
+  <label for="number_example">Number</label>
+  <input type="number" id="number_example" name="number_example">
+
+
+  <h3>Buttons</h3>
+  <button>Button</button>
+  <input type="button" value="Input Button">
+  <input type="reset" value="Reset Button">
+  <input type="file" id="file_example" value="File Button">
+  <label for="file_example">Upload File</label>
+
+  <h3>Selections</h3>
+  <form>
+    <p>Checkboxes for multiple selections</p>
+    <div>
+      <input type="checkbox" name="checkbox1" id="checkbox_example1">
+      <label for="checkbox_example1">Checkbox 1</label>
+    </div>
+
+    <div>
+      <input type="checkbox" name="checkbox1" id="checkbox_example2">
+      <label for="checkbox_example2">Checkbox 2</label>
+    </div>
+  </form>
+
+  <form>
+    <p>Radio Buttons for single selection</p>
+    <div>
+      <input type="radio" id="radoi1" name="contact" value="radio1">
+      <label for="radoi1">Radio 1</label>
+    </div>
+    <div>
+      <input type="radio" id="radio2" name="contact" value="radio2">
+      <label for="radio2">Radio 2</label>
+    </div>
+    <div>
+      <input type="radio" id="radio3" name="contact" value="radio3">
+      <label for="radio3">Radio 3</label>
+    </div>
+  </form>
 
   <label for="select_example">Select dropdown menu</label>
   <select name="select_example">
@@ -107,18 +165,6 @@
     <option value="option5">Option 5</option>
     <option value="option6">Option 6</option>
   </select>
-
-  <label for="password_example">Passwords</label>
-  <input type="password" name="password_example">
-
-  <label for="readonly_example">Disabled input</label>
-  <input disabled read-only type="text" value="email@address.com">
-
-  <p>Buttons</p>
-  <button>Button</button>
-  <input type="button" value="Input Button">
-
-
 
 
 </body>
