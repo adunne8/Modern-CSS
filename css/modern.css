@@ -45,13 +45,15 @@ a {
     color: #d43921; }
 
 q {
-  background-color: #eaeaea; }
+  background-color: #d8d8d8; }
 
 blockquote,
 pre {
   border-left: 3px solid #414141;
   background-color: #eaeaea;
   margin: 5px;
+  padding-top: 10px;
+  padding-bottom: 10px;
   padding-left: 15px; }
 
 pre {
