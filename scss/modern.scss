@@ -23,7 +23,6 @@ body {
   margin-bottom: 15px;
 }
 /* TEXT */
-
 h1,
 h2,
 h3,
@@ -81,12 +80,24 @@ pre {
   padding-left: 15px;
 }
 
-pre {
-  background-color: $blockcolor;
-}
-
 code {
   font-family: $altfont;
+  counter-reset: line;
+  white-space: pre-wrap;
+
+  span {
+    display: inline-block;
+    margin-left: 30px;
+    &:before {
+      margin-left: -30px;
+      counter-increment: line;
+      content: counter(line);
+      display: inline-block;
+      border-right: 1px solid #ddd;
+      color: #888;
+      min-width: 30px;
+    }
+  }
 }
 
 hr {
@@ -127,6 +138,7 @@ button {
   }
 }
 */
+
 label {
   margin: 5px 0;
   display: inline-block;
@@ -168,7 +180,6 @@ select {
 input[type="button"],
 input[type="file"],
 input[type="reset"],
-
 button {
   border: 1px solid $strongcolor;
   border-radius: 3px;
@@ -182,16 +193,18 @@ button {
   &:hover {
     background-color: #f0f0f0;
   }
-  &:focus{
+
+  &:focus {
     outline: 0;
     box-shadow: 0 0 9px $linkcolor;
     transition: box-shadow 0.1s;
   }
 }
-input[type="file"]{
-  padding: 2px;
 
+input[type="file"] {
+  padding: 2px;
 }
+
 input[type="checkbox"] {
   display: inline-block;
   width: auto;

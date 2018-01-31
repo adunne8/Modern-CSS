@@ -56,11 +56,21 @@ pre {
   padding-bottom: 10px;
   padding-left: 15px; }
 
-pre {
-  background-color: #eaeaea; }
-
 code {
-  font-family: "Courier New", "Courier", monospace; }
+  font-family: "Courier New", "Courier", monospace;
+  counter-reset: line;
+  white-space: pre-wrap; }
+  code span {
+    display: inline-block;
+    margin-left: 30px; }
+    code span:before {
+      margin-left: -30px;
+      counter-increment: line;
+      content: counter(line);
+      display: inline-block;
+      border-right: 1px solid #ddd;
+      color: #888;
+      min-width: 30px; }
 
 hr {
   border-color: #414141; }
