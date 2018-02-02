@@ -89,7 +89,10 @@ code {
     display: inline-block;
     margin-left: 30px;
     &:before {
+      // REPOSITION CODE COUNT ON EDGE OF BLOCK
       margin-left: -30px;
+      // PUSH CODE AWAY FROM BORDER
+      margin-right: 10px;
       counter-increment: line;
       content: counter(line);
       display: inline-block;
@@ -184,6 +187,7 @@ button {
   border: 1px solid $strongcolor;
   border-radius: 3px;
   padding: 5px;
+
   font-size: 1.2rem;
   margin: 5px 0;
   background-color: #fff;
