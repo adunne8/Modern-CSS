@@ -163,6 +163,7 @@ select {
   padding: 7px;
   border: 1px solid $bordercolor;
   border-radius: 3px;
+  box-sizing: border-box;
 
   &:focus {
     box-shadow: 0 0 9px $linkcolor;
